@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A42D2D2F1C89BF0C00430035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D2E1C89BF0C00430035 /* AppDelegate.swift */; };
+		A42D2D311C89BF0C00430035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D301C89BF0C00430035 /* ViewController.swift */; };
+		A42D2D341C89BF0C00430035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42D2D321C89BF0C00430035 /* Main.storyboard */; };
+		A42D2D361C89BF0C00430035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42D2D351C89BF0C00430035 /* Assets.xcassets */; };
+		A42D2D391C89BF0C00430035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42D2D371C89BF0C00430035 /* LaunchScreen.storyboard */; };
+		A42D2D441C89BF0C00430035 /* PPTWatchExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D431C89BF0C00430035 /* PPTWatchExampleTests.swift */; };
+		A42D2D4F1C89BF0C00430035 /* PPTWatchExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D4E1C89BF0C00430035 /* PPTWatchExampleUITests.swift */; };
+		A42D2D621C89BF5E00430035 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42D2D601C89BF5E00430035 /* Interface.storyboard */; };
+		A42D2D641C89BF5E00430035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42D2D631C89BF5E00430035 /* Assets.xcassets */; };
+		A42D2D6B1C89BF5E00430035 /* PPTWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A42D2D6A1C89BF5E00430035 /* PPTWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A42D2D721C89BF5E00430035 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D711C89BF5E00430035 /* InterfaceController.swift */; };
+		A42D2D741C89BF5E00430035 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D731C89BF5E00430035 /* ExtensionDelegate.swift */; };
+		A42D2D761C89BF5E00430035 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D751C89BF5E00430035 /* NotificationController.swift */; };
+		A42D2D781C89BF5E00430035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42D2D771C89BF5E00430035 /* Assets.xcassets */; };
+		A42D2D7C1C89BF5E00430035 /* PPTWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A42D2D5E1C89BF5E00430035 /* PPTWatch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A42D2D401C89BF0C00430035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42D2D231C89BF0C00430035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42D2D2A1C89BF0C00430035;
+			remoteInfo = PPTWatchExample;
+		};
+		A42D2D4B1C89BF0C00430035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42D2D231C89BF0C00430035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42D2D2A1C89BF0C00430035;
+			remoteInfo = PPTWatchExample;
+		};
+		A42D2D6C1C89BF5E00430035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42D2D231C89BF0C00430035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42D2D691C89BF5E00430035;
+			remoteInfo = "PPTWatch Extension";
+		};
+		A42D2D7A1C89BF5E00430035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42D2D231C89BF0C00430035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42D2D5D1C89BF5E00430035;
+			remoteInfo = PPTWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A42D2D801C89BF5E00430035 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A42D2D6B1C89BF5E00430035 /* PPTWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D841C89BF5E00430035 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A42D2D7C1C89BF5E00430035 /* PPTWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A42D2D2B1C89BF0C00430035 /* PPTWatchExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPTWatchExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42D2D2E1C89BF0C00430035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42D2D301C89BF0C00430035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42D2D331C89BF0C00430035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A42D2D351C89BF0C00430035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42D2D381C89BF0C00430035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A42D2D3A1C89BF0C00430035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42D2D3F1C89BF0C00430035 /* PPTWatchExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPTWatchExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42D2D431C89BF0C00430035 /* PPTWatchExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTWatchExampleTests.swift; sourceTree = "<group>"; };
+		A42D2D451C89BF0C00430035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42D2D4A1C89BF0C00430035 /* PPTWatchExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPTWatchExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42D2D4E1C89BF0C00430035 /* PPTWatchExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTWatchExampleUITests.swift; sourceTree = "<group>"; };
+		A42D2D501C89BF0C00430035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42D2D5E1C89BF5E00430035 /* PPTWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPTWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42D2D611C89BF5E00430035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A42D2D631C89BF5E00430035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42D2D651C89BF5E00430035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42D2D6A1C89BF5E00430035 /* PPTWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PPTWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42D2D701C89BF5E00430035 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A42D2D711C89BF5E00430035 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A42D2D731C89BF5E00430035 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A42D2D751C89BF5E00430035 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A42D2D771C89BF5E00430035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42D2D791C89BF5E00430035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42D2D281C89BF0C00430035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D3C1C89BF0C00430035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D471C89BF0C00430035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D671C89BF5E00430035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A42D2D221C89BF0C00430035 = {
+			isa = PBXGroup;
+			children = (
+				A42D2D2D1C89BF0C00430035 /* PPTWatchExample */,
+				A42D2D421C89BF0C00430035 /* PPTWatchExampleTests */,
+				A42D2D4D1C89BF0C00430035 /* PPTWatchExampleUITests */,
+				A42D2D5F1C89BF5E00430035 /* PPTWatch */,
+				A42D2D6E1C89BF5E00430035 /* PPTWatch Extension */,
+				A42D2D2C1C89BF0C00430035 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A42D2D2C1C89BF0C00430035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D2B1C89BF0C00430035 /* PPTWatchExample.app */,
+				A42D2D3F1C89BF0C00430035 /* PPTWatchExampleTests.xctest */,
+				A42D2D4A1C89BF0C00430035 /* PPTWatchExampleUITests.xctest */,
+				A42D2D5E1C89BF5E00430035 /* PPTWatch.app */,
+				A42D2D6A1C89BF5E00430035 /* PPTWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42D2D2D1C89BF0C00430035 /* PPTWatchExample */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D2E1C89BF0C00430035 /* AppDelegate.swift */,
+				A42D2D301C89BF0C00430035 /* ViewController.swift */,
+				A42D2D321C89BF0C00430035 /* Main.storyboard */,
+				A42D2D351C89BF0C00430035 /* Assets.xcassets */,
+				A42D2D371C89BF0C00430035 /* LaunchScreen.storyboard */,
+				A42D2D3A1C89BF0C00430035 /* Info.plist */,
+			);
+			path = PPTWatchExample;
+			sourceTree = "<group>";
+		};
+		A42D2D421C89BF0C00430035 /* PPTWatchExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D431C89BF0C00430035 /* PPTWatchExampleTests.swift */,
+				A42D2D451C89BF0C00430035 /* Info.plist */,
+			);
+			path = PPTWatchExampleTests;
+			sourceTree = "<group>";
+		};
+		A42D2D4D1C89BF0C00430035 /* PPTWatchExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D4E1C89BF0C00430035 /* PPTWatchExampleUITests.swift */,
+				A42D2D501C89BF0C00430035 /* Info.plist */,
+			);
+			path = PPTWatchExampleUITests;
+			sourceTree = "<group>";
+		};
+		A42D2D5F1C89BF5E00430035 /* PPTWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D601C89BF5E00430035 /* Interface.storyboard */,
+				A42D2D631C89BF5E00430035 /* Assets.xcassets */,
+				A42D2D651C89BF5E00430035 /* Info.plist */,
+			);
+			path = PPTWatch;
+			sourceTree = "<group>";
+		};
+		A42D2D6E1C89BF5E00430035 /* PPTWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D711C89BF5E00430035 /* InterfaceController.swift */,
+				A42D2D731C89BF5E00430035 /* ExtensionDelegate.swift */,
+				A42D2D751C89BF5E00430035 /* NotificationController.swift */,
+				A42D2D771C89BF5E00430035 /* Assets.xcassets */,
+				A42D2D791C89BF5E00430035 /* Info.plist */,
+				A42D2D6F1C89BF5E00430035 /* Supporting Files */,
+			);
+			path = "PPTWatch Extension";
+			sourceTree = "<group>";
+		};
+		A42D2D6F1C89BF5E00430035 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A42D2D701C89BF5E00430035 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42D2D2A1C89BF0C00430035 /* PPTWatchExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42D2D531C89BF0C00430035 /* Build configuration list for PBXNativeTarget "PPTWatchExample" */;
+			buildPhases = (
+				A42D2D271C89BF0C00430035 /* Sources */,
+				A42D2D281C89BF0C00430035 /* Frameworks */,
+				A42D2D291C89BF0C00430035 /* Resources */,
+				A42D2D841C89BF5E00430035 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42D2D7B1C89BF5E00430035 /* PBXTargetDependency */,
+			);
+			name = PPTWatchExample;
+			productName = PPTWatchExample;
+			productReference = A42D2D2B1C89BF0C00430035 /* PPTWatchExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A42D2D3E1C89BF0C00430035 /* PPTWatchExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42D2D561C89BF0C00430035 /* Build configuration list for PBXNativeTarget "PPTWatchExampleTests" */;
+			buildPhases = (
+				A42D2D3B1C89BF0C00430035 /* Sources */,
+				A42D2D3C1C89BF0C00430035 /* Frameworks */,
+				A42D2D3D1C89BF0C00430035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42D2D411C89BF0C00430035 /* PBXTargetDependency */,
+			);
+			name = PPTWatchExampleTests;
+			productName = PPTWatchExampleTests;
+			productReference = A42D2D3F1C89BF0C00430035 /* PPTWatchExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A42D2D491C89BF0C00430035 /* PPTWatchExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42D2D591C89BF0C00430035 /* Build configuration list for PBXNativeTarget "PPTWatchExampleUITests" */;
+			buildPhases = (
+				A42D2D461C89BF0C00430035 /* Sources */,
+				A42D2D471C89BF0C00430035 /* Frameworks */,
+				A42D2D481C89BF0C00430035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42D2D4C1C89BF0C00430035 /* PBXTargetDependency */,
+			);
+			name = PPTWatchExampleUITests;
+			productName = PPTWatchExampleUITests;
+			productReference = A42D2D4A1C89BF0C00430035 /* PPTWatchExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A42D2D5D1C89BF5E00430035 /* PPTWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42D2D811C89BF5E00430035 /* Build configuration list for PBXNativeTarget "PPTWatch" */;
+			buildPhases = (
+				A42D2D5C1C89BF5E00430035 /* Resources */,
+				A42D2D801C89BF5E00430035 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42D2D6D1C89BF5E00430035 /* PBXTargetDependency */,
+			);
+			name = PPTWatch;
+			productName = PPTWatch;
+			productReference = A42D2D5E1C89BF5E00430035 /* PPTWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A42D2D691C89BF5E00430035 /* PPTWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42D2D7D1C89BF5E00430035 /* Build configuration list for PBXNativeTarget "PPTWatch Extension" */;
+			buildPhases = (
+				A42D2D661C89BF5E00430035 /* Sources */,
+				A42D2D671C89BF5E00430035 /* Frameworks */,
+				A42D2D681C89BF5E00430035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PPTWatch Extension";
+			productName = "PPTWatch Extension";
+			productReference = A42D2D6A1C89BF5E00430035 /* PPTWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42D2D231C89BF0C00430035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Analia Rossi";
+				TargetAttributes = {
+					A42D2D2A1C89BF0C00430035 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A42D2D3E1C89BF0C00430035 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A42D2D2A1C89BF0C00430035;
+					};
+					A42D2D491C89BF0C00430035 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A42D2D2A1C89BF0C00430035;
+					};
+					A42D2D5D1C89BF5E00430035 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A42D2D691C89BF5E00430035 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A42D2D261C89BF0C00430035 /* Build configuration list for PBXProject "PPTWatchExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A42D2D221C89BF0C00430035;
+			productRefGroup = A42D2D2C1C89BF0C00430035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42D2D2A1C89BF0C00430035 /* PPTWatchExample */,
+				A42D2D3E1C89BF0C00430035 /* PPTWatchExampleTests */,
+				A42D2D491C89BF0C00430035 /* PPTWatchExampleUITests */,
+				A42D2D5D1C89BF5E00430035 /* PPTWatch */,
+				A42D2D691C89BF5E00430035 /* PPTWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42D2D291C89BF0C00430035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D391C89BF0C00430035 /* LaunchScreen.storyboard in Resources */,
+				A42D2D361C89BF0C00430035 /* Assets.xcassets in Resources */,
+				A42D2D341C89BF0C00430035 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D3D1C89BF0C00430035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D481C89BF0C00430035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D5C1C89BF5E00430035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D641C89BF5E00430035 /* Assets.xcassets in Resources */,
+				A42D2D621C89BF5E00430035 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D681C89BF5E00430035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D781C89BF5E00430035 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42D2D271C89BF0C00430035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D311C89BF0C00430035 /* ViewController.swift in Sources */,
+				A42D2D2F1C89BF0C00430035 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D3B1C89BF0C00430035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D441C89BF0C00430035 /* PPTWatchExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D461C89BF0C00430035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D4F1C89BF0C00430035 /* PPTWatchExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42D2D661C89BF5E00430035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42D2D761C89BF5E00430035 /* NotificationController.swift in Sources */,
+				A42D2D741C89BF5E00430035 /* ExtensionDelegate.swift in Sources */,
+				A42D2D721C89BF5E00430035 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A42D2D411C89BF0C00430035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42D2D2A1C89BF0C00430035 /* PPTWatchExample */;
+			targetProxy = A42D2D401C89BF0C00430035 /* PBXContainerItemProxy */;
+		};
+		A42D2D4C1C89BF0C00430035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42D2D2A1C89BF0C00430035 /* PPTWatchExample */;
+			targetProxy = A42D2D4B1C89BF0C00430035 /* PBXContainerItemProxy */;
+		};
+		A42D2D6D1C89BF5E00430035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42D2D691C89BF5E00430035 /* PPTWatch Extension */;
+			targetProxy = A42D2D6C1C89BF5E00430035 /* PBXContainerItemProxy */;
+		};
+		A42D2D7B1C89BF5E00430035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42D2D5D1C89BF5E00430035 /* PPTWatch */;
+			targetProxy = A42D2D7A1C89BF5E00430035 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A42D2D321C89BF0C00430035 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42D2D331C89BF0C00430035 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A42D2D371C89BF0C00430035 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42D2D381C89BF0C00430035 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A42D2D601C89BF5E00430035 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42D2D611C89BF5E00430035 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42D2D511C89BF0C00430035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A42D2D521C89BF0C00430035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A42D2D541C89BF0C00430035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PPTWatchExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A42D2D551C89BF0C00430035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PPTWatchExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A42D2D571C89BF0C00430035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PPTWatchExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPTWatchExample.app/PPTWatchExample";
+			};
+			name = Debug;
+		};
+		A42D2D581C89BF0C00430035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PPTWatchExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPTWatchExample.app/PPTWatchExample";
+			};
+			name = Release;
+		};
+		A42D2D5A1C89BF0C00430035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PPTWatchExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PPTWatchExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A42D2D5B1C89BF0C00430035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PPTWatchExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PPTWatchExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		A42D2D7E1C89BF5E00430035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PPTWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A42D2D7F1C89BF5E00430035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PPTWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A42D2D821C89BF5E00430035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PPTWatch_Extension;
+				INFOPLIST_FILE = PPTWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A42D2D831C89BF5E00430035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PPTWatch_Extension;
+				INFOPLIST_FILE = PPTWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPTWatchExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42D2D261C89BF0C00430035 /* Build configuration list for PBXProject "PPTWatchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42D2D511C89BF0C00430035 /* Debug */,
+				A42D2D521C89BF0C00430035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42D2D531C89BF0C00430035 /* Build configuration list for PBXNativeTarget "PPTWatchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42D2D541C89BF0C00430035 /* Debug */,
+				A42D2D551C89BF0C00430035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42D2D561C89BF0C00430035 /* Build configuration list for PBXNativeTarget "PPTWatchExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42D2D571C89BF0C00430035 /* Debug */,
+				A42D2D581C89BF0C00430035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42D2D591C89BF0C00430035 /* Build configuration list for PBXNativeTarget "PPTWatchExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42D2D5A1C89BF0C00430035 /* Debug */,
+				A42D2D5B1C89BF0C00430035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42D2D7D1C89BF5E00430035 /* Build configuration list for PBXNativeTarget "PPTWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42D2D7E1C89BF5E00430035 /* Debug */,
+				A42D2D7F1C89BF5E00430035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42D2D811C89BF5E00430035 /* Build configuration list for PBXNativeTarget "PPTWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42D2D821C89BF5E00430035 /* Debug */,
+				A42D2D831C89BF5E00430035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42D2D231C89BF0C00430035 /* Project object */;
+}
