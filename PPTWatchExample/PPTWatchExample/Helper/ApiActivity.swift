@@ -20,9 +20,6 @@ class ApiActivity: NSObject
     
     func getActivity(completionHandler:APISuccessClosure)
     {
-        Alamofire.request(.POST,"http://sysadminsoftware.com/qhmdq/rest/beta/index.php/v001/betaactivities", parameters: ["token": "012345678901234567890123456789012"])
-            .responseJSON { (data:Response<AnyObject, NSError>) -> Void in
-            }
         Alamofire.request(.POST, "http://sysadminsoftware.com/qhmdq/rest/beta/index.php/v001/betaactivities",parameters: ["token": "012345678901234567890123456789012"])
             .responseJSON(completionHandler: completionHandler)
     }
