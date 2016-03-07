@@ -27,6 +27,8 @@
 		A42D2D891C89DFAB00430035 /* ApiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D881C89DFAB00430035 /* ApiActivity.swift */; };
 		A42D2D8B1C89E41B00430035 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D8A1C89E41B00430035 /* ActivityTableViewCell.swift */; };
 		A42D2D901C89FAC600430035 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D8F1C89FAC600430035 /* Activity.swift */; };
+		A4EFF5451C8DAD8600121562 /* ApiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D2D881C89DFAB00430035 /* ApiActivity.swift */; };
+		ECC4700D6860CA39EC916128 /* Pods_PPTWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2BF5F95B7E26E593ACDC1C /* Pods_PPTWatch_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,9 @@
 		A42D2D8A1C89E41B00430035 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		A42D2D8F1C89FAC600430035 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = Model/Activity.swift; sourceTree = "<group>"; };
 		A71BA73C7F0BD5B04151ECCF /* Pods_PPTWatchExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPTWatchExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2BF5F95B7E26E593ACDC1C /* Pods_PPTWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPTWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEB7E2D35CA8235A4E4500E /* Pods-PPTWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPTWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PPTWatch Extension/Pods-PPTWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		C972D523DF5CDF0C2CEDDFD3 /* Pods-PPTWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPTWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PPTWatch Extension/Pods-PPTWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		DD2DF7E687F6C0BCE32570B4 /* Pods-PPTWatchExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPTWatchExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PPTWatchExample/Pods-PPTWatchExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC4700D6860CA39EC916128 /* Pods_PPTWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +163,8 @@
 			children = (
 				DD2DF7E687F6C0BCE32570B4 /* Pods-PPTWatchExample.debug.xcconfig */,
 				02F0DBDE40482F665CD176BB /* Pods-PPTWatchExample.release.xcconfig */,
+				C972D523DF5CDF0C2CEDDFD3 /* Pods-PPTWatch Extension.debug.xcconfig */,
+				BDEB7E2D35CA8235A4E4500E /* Pods-PPTWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -289,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				A71BA73C7F0BD5B04151ECCF /* Pods_PPTWatchExample.framework */,
+				AC2BF5F95B7E26E593ACDC1C /* Pods_PPTWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -375,9 +384,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A42D2D7D1C89BF5E00430035 /* Build configuration list for PBXNativeTarget "PPTWatch Extension" */;
 			buildPhases = (
+				2C2EE983BE2C142DD9E967FE /* Check Pods Manifest.lock */,
 				A42D2D661C89BF5E00430035 /* Sources */,
 				A42D2D671C89BF5E00430035 /* Frameworks */,
 				A42D2D681C89BF5E00430035 /* Resources */,
+				5FDCA9DC4ADDE71C676FFB88 /* Embed Pods Frameworks */,
+				976396F7A561BB9E5E842FF5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -484,6 +496,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C2EE983BE2C142DD9E967FE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		5BF95CBC449257B160F107FE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,6 +526,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PPTWatchExample/Pods-PPTWatchExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5FDCA9DC4ADDE71C676FFB88 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PPTWatch Extension/Pods-PPTWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8FD89923E76129F5D207F3B6 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +554,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		976396F7A561BB9E5E842FF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PPTWatch Extension/Pods-PPTWatch Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F896788F6B02508CAE4611C9 /* Embed Pods Frameworks */ = {
@@ -568,6 +625,7 @@
 				A42D2D761C89BF5E00430035 /* NotificationController.swift in Sources */,
 				A42D2D741C89BF5E00430035 /* ExtensionDelegate.swift in Sources */,
 				A42D2D721C89BF5E00430035 /* InterfaceController.swift in Sources */,
+				A4EFF5451C8DAD8600121562 /* ApiActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +837,7 @@
 		};
 		A42D2D7E1C89BF5E00430035 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C972D523DF5CDF0C2CEDDFD3 /* Pods-PPTWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "PPTWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -793,6 +852,7 @@
 		};
 		A42D2D7F1C89BF5E00430035 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEB7E2D35CA8235A4E4500E /* Pods-PPTWatch Extension.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "PPTWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
